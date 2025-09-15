@@ -1,0 +1,71 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Navbar */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+}
+
+nav .logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+nav .nav-links {
+  list-style: none;
+  display: flex;
+}
+
+nav .nav-links li {
+  margin-left: 20px;
+}
+
+nav .nav-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: url('https://picsum.photos/1920/1080') no-repeat center center/cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero .btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #ff9800;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Sections */
+.section {
+  padding: 100px 50px;
+  text-align: center;
+}
