@@ -1,123 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Landing Page</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- Navigation -->
-  <nav>
-    <div class="logo">MyWebsite</div>
-    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#gallery">Gallery</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <div class="logo">MyWebsite</div>
+      <button
+        class="menu-toggle"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
 
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="hero-overlay"></div>
-    <div class="container hero-content reveal">
-      <h1>Build Something Beautiful</h1>
-      <p>Modern, responsive web experiences crafted with clean design and smooth interactions.</p>
-      <div class="cta">
-        <a href="#about" class="btn primary">Get Started</a>
-        <a href="#services" class="btn secondary">View Services</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="section about">
-    <div class="container grid-2">
-      <div class="about-text reveal">
-        <h2>About Us</h2>
-        <p>We design and build delightful digital products. Our focus is on creating fast, accessible, and visually engaging websites that work beautifully across all devices.</p>
-        <ul class="ticks">
-          <li>Responsive by default</li>
-          <li>Clean and modern design</li>
-          <li>Performance-focused</li>
-        </ul>
-      </div>
-      <div class="about-image reveal">
-        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop" alt="Team working together">
-      </div>
-    </div>
-  </section>
-
-  <!-- Services Section -->
-  <section id="services" class="section services">
-    <div class="container">
-      <h2>Our Services</h2>
-      <div class="cards">
-        <article class="card reveal">
-          <div class="icon">💡</div>
-          <h3>UI/UX Design</h3>
-          <p>Intuitive interfaces with a keen eye for aesthetics and usability.</p>
-        </article>
-        <article class="card reveal">
-          <div class="icon">⚙️</div>
-          <h3>Web Development</h3>
-          <p>Robust front-end engineering with modern frameworks and best practices.</p>
-        </article>
-        <article class="card reveal">
-          <div class="icon">🚀</div>
-          <h3>Performance</h3>
-          <p>Optimized assets and interactions for speed and smoothness.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section id="gallery" class="section gallery">
-    <div class="container">
-      <h2>Gallery</h2>
-      <div class="gallery-grid">
-        <img src="https://picsum.photos/id/1015/600/400" alt="Landscape 1" class="reveal">
-        <img src="https://picsum.photos/id/1025/600/400" alt="Landscape 2" class="reveal">
-        <img src="https://picsum.photos/id/1035/600/400" alt="Landscape 3" class="reveal">
-        <img src="https://picsum.photos/id/1045/600/400" alt="Landscape 4" class="reveal">
-        <img src="https://picsum.photos/id/1055/600/400" alt="Landscape 5" class="reveal">
-        <img src="https://picsum.photos/id/1065/600/400" alt="Landscape 6" class="reveal">
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="section contact">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <form class="contact-form" onsubmit="return false;">
-        <div class="form-row">
-          <input type="text" name="name" placeholder="Your Name" required>
-          <input type="email" name="email" placeholder="Your Email" required>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content reveal">
+        <h1>Build Something Beautiful</h1>
+        <p>
+          Modern, responsive web experiences crafted with clean design and
+          smooth interactions.
+        </p>
+        <div class="cta">
+          <a href="#about" class="btn primary">Get Started</a>
+          <a href="#services" class="btn secondary">View Services</a>
         </div>
-        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn primary">Send Message</button>
-      </form>
-      <p class="contact-info">Prefer email? <a href="mailto:example@email.com">example@email.com</a></p>
-    </div>
-  </section>
+      </div>
+    </section>
 
-  <footer class="footer">
-    <div class="container">
-      <p>© <span id="year"></span> MyWebsite. All rights reserved.</p>
-    </div>
-  </footer>
+    <!-- About Section -->
+    <section id="about" class="section about">
+      <div class="container grid-2">
+        <div class="about-text reveal">
+          <h2>About Us</h2>
+          <p>
+            We design and build delightful digital products. Our focus is on
+            creating fast, accessible, and visually engaging websites that work
+            beautifully across all devices.
+          </p>
+          <ul class="ticks">
+            <li>Responsive by default</li>
+            <li>Clean and modern design</li>
+            <li>Performance-focused</li>
+          </ul>
+        </div>
+        <div class="about-image reveal">
+          <img
+            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop"
+            alt="Team working together"
+          />
+        </div>
+      </div>
+    </section>
 
-  <script src="script.js"></script>
-</body>
+    <!-- Services Section -->
+    <section id="services" class="section services">
+      <div class="container">
+        <h2>Our Services</h2>
+        <div class="cards">
+          <article class="card reveal">
+            <div class="icon">💡</div>
+            <h3>UI/UX Design</h3>
+            <p>
+              Intuitive interfaces with a keen eye for aesthetics and usability.
+            </p>
+          </article>
+          <article class="card reveal">
+            <div class="icon">⚙️</div>
+            <h3>Web Development</h3>
+            <p>
+              Robust front-end engineering with modern frameworks and best
+              practices.
+            </p>
+          </article>
+          <article class="card reveal">
+            <div class="icon">🚀</div>
+            <h3>Performance</h3>
+            <p>Optimized assets and interactions for speed and smoothness.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section gallery">
+      <div class="container">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+          <img
+            src="https://picsum.photos/id/1015/600/400"
+            alt="Landscape 1"
+            class="reveal"
+          />
+          <img
+            src="https://picsum.photos/id/1025/600/400"
+            alt="Landscape 2"
+            class="reveal"
+          />
+          <img
+            src="https://picsum.photos/id/1035/600/400"
+            alt="Landscape 3"
+            class="reveal"
+          />
+          <img
+            src="https://picsum.photos/id/1045/600/400"
+            alt="Landscape 4"
+            class="reveal"
+          />
+          <img
+            src="https://picsum.photos/id/1055/600/400"
+            alt="Landscape 5"
+            class="reveal"
+          />
+          <img
+            src="https://picsum.photos/id/1065/600/400"
+            alt="Landscape 6"
+            class="reveal"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <form class="contact-form" onsubmit="return false;">
+          <div class="form-row">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+          </div>
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit" class="btn primary">Send Message</button>
+        </form>
+        <p class="contact-info">
+          Prefer email? <a href="mailto:example@email.com">example@email.com</a>
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© <span id="year"></span> MyWebsite. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
