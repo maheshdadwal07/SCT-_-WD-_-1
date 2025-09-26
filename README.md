@@ -18,8 +18,8 @@ The task is to build a **responsive landing page** with a **fixed navigation men
 - Multiple sections: Home, About, Services, Contact.
 
 📂 Project Structure
-SCT_WD_1
 
-├── index.html
-├── style.css
-└── script.js
+├── index.html   
+├── style.css    
+└── script.js    
+
